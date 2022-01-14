@@ -208,7 +208,36 @@ $ git commit -m 'first commit'
 
   
 
+---
 
+(1) 집에서 작성
+
+```
+$ git init
+$ touch day1.md
+$ git add .
+$ git commit -m '집에서 day1 작성'
+$ git remote add origin https://github.com/hanoogi2/TIL-remote.git
+$ git push origin master
+
+```
+
+(2) 강의실에서 작성
+
+```
+$ git clone https://github.com/hanoogi2/TIL-remote.git TIL-class
+$ cd TIL-class
+$ touch day2.md
+$ git add .
+$ git commit -m '강의장에서 day2 작성'
+$ git push origin master
+```
+
+(3) 집에서 강의실에 올린 것 받기
+
+```
+$ git pull origin master
+```
 
 
 
